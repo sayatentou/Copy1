@@ -1,0 +1,439 @@
+body {
+  margin: 0;
+}
+
+/* ここからヘッダー */
+header {
+  height: 80px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.header-ul {
+  padding-left: 0;
+  margin: 0;
+  height: 80px;
+}
+
+.header-logo {
+  width: 34px;
+  height: 34px;
+  padding: 24px;
+  float: left;
+  cursor: pointer;
+}
+
+.header-li {
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  margin: 0 8px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.header-li:hover {
+  border-bottom: 2px solid rgb(118,118,118);
+}
+
+.search {
+  height:80px;
+  box-sizing: border-box;
+  padding-top: 16.2px;
+  float: left;
+}
+
+form {
+  position: relative;
+  width: 460px;
+  height: 47.6px;
+  border: solid 1px rgb(235, 235, 235);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px ;
+  transition: 0.4s;
+}
+
+form:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(26, 26, 29, 0.08) 0px 4px 12px
+}
+
+.glass {
+  width: 53px;
+  height:47.6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #484848;
+  outline: none;
+}
+
+input {
+  width: 403px;
+  height: 47.6px;
+  position: absolute;
+  left: 53px;
+  top: 0;
+  outline: none;
+  border: none;
+  color: #484848;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* インプット要素だけ伸びて、<form>要素が伸びないのが問題 */
+input:focus {
+  width: 510px;
+}
+
+.header-list {
+  font-size: 14px;
+  font-weight: 600;
+  color: #484848;
+  height: 80px;
+  float: right;
+  text-align: center;
+}
+
+/* ここからアラート */
+.alert {
+  width: 100%;
+  height: 50px;
+  background-color:#c2e4e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.alert-sentense {
+  font-size: 14px;
+  color: #484848;
+  margin: 0;
+}
+
+.saying {
+  color: #4cb0bb;
+  font-size: 35px;
+}
+
+.cancel {
+  position: absolute;
+  right: 16px;
+  color: #004c54;
+}
+
+.cancel {
+  border: none;
+  background-color: #c2e4e7;
+  cursor: pointer;
+  outline: none;
+}
+
+/* ここからフォトエリア */
+.photo-area {
+  width: 100%;
+  height: 600px;
+  background-image: url("../img/BackgroundHomeSummer.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.dark-cover {
+  width: 100%;
+  height: 600px;
+  background-color: #040b2a;
+  opacity: 0.1;
+}
+
+.top-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 1032px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 46px;
+  color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  line-height: 52px;
+}
+
+.copy {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top:16px;
+}
+
+.first-btn {
+  width: 192px;
+  height: 48px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  color: #484848;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  margin-top: 32px;
+}
+
+/* ここからフィーチャーエリア */
+.feature-container {
+  margin: 48px auto;
+  margin-bottom: 0;
+  width: 1080px;
+  height: 289.8px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.perfect {
+  font-size:32px;
+  font-weight:700px;
+  color: #484848;
+  line-height: 32px;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.feature {
+  width: 352px;
+  padding: 0 12px;
+}
+
+.feature-icon {
+  font-size: 50px;
+  color: #007a87;
+}
+
+.short {
+  font-size: 18px;
+  font-weight: 700;
+  color: #484848;
+  line-height: 20px;
+}
+
+.long {
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+  line-height: 23px;
+}
+
+/* ここらかプレゼントエリア */
+.present-area {
+  height: 418.2px;
+  background-color: #007a87;
+  text-align: center;
+  padding: 48px 0;
+  box-sizing: border-box;
+}
+
+.giftcard {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.answer {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-top: 6px;
+  margin-bottom: 48px;
+}
+
+.second-btn {
+  width: 232px;
+  height: 42.4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 42.4px;
+  color:#ffffff;
+  background-color:#ff5a5f;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.second-btn:hover {
+  background-color: #ff7e82;
+}
+
+.mechanism {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.6;
+  font-size: 14px;
+  margin-top: 18px;
+  display: inline-block;
+
+}
+
+.mechanism:hover {
+  opacity: 1.0;
+}
+
+/* ここからフッター */
+footer {
+  height:: 368.4px;
+}
+
+.footer-container {
+  width: 1032px;
+  height: 272.4px;
+  margin: 0 auto;
+}
+
+.blocks {
+  display: flex;
+  align-items: top;
+  justify-content: left;
+  padding: 48px 0;
+  padding-bottom: 10px;
+  width: 1032px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 18px;
+  color: #484848;
+  margin-top: 0;
+}
+
+.block {
+  margin-left: 87.325px;
+  padding: 0 8px;
+  width: 158.663px;
+}
+
+.left {
+  margin-left: 0;
+}
+
+
+.footer-li {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #767676;
+  margin-bottom: 4px;
+}
+
+.footer-li:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  font-size: 18px;
+  color: #767676;
+}
+
+.new {
+  width: 34px;
+  height: 18px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  background-color: #007a87;
+  border-radius: 4px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.icons {
+  margin-top: 9px;
+  margin-bottom: 8px;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+  cursor: pointer;
+}
+
+.lower {
+  height: 53.8px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.footer-logo {
+  float: left;
+  padding-top: 17px;
+  padding-right: 10px;
+}
+
+.footer-sentense {
+  float: left;
+}
+
+.global {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #767676;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  display: block;
+}
+
+.global:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 14px;
+  color: #767676;
+}
+
+.lang {
+  font-size: 14px;
+  font-weight: 600;
+  color: #767676;
+  width: 68.4px;
+  height: 35.6px;
+  border: solid 1px rgb(242, 242, 242);
+  line-height: 35.6px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  float: right;
+  margin-left: 10px;
+}
+
+.lang:hover {
+  background-color: rgb(242, 242, 242);
+}
